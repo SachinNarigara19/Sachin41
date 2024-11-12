@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Global Reset and Body Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
+          ),
+          url('https://source.unsplash.com/1600x900/?nature,abstract'); /* Example background image URL */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        overflow-y: auto; /* Enable vertical scrolling */
+      }
+
+      /* Header (Logo) */
+      .logo-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .logo-container img {
+        width: 250px;
+        height: auto;
+      }
+
+      /* Main Container */
+      .container {
+        background-color: rgba(255, 255, 255, 0.85); /* Light transparent white */
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        flex-grow: 1;
+        margin-top: 20px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      input[type="text"]:hover {
+        background-color: #f0f5f9;
+      }
+
+      /* Form and Input Fields */
+      .container label {
+        text-align: left;
+        font-size: 15px;
+        display: block;
+        margin: 8px 0 5px;
+        color: #444;
+        font-weight: 600;
+      }
+
+      .container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1.5px solid #c5ccd3;
+        border-radius: 8px;
+        background-color: #fafbfc;
+        font-size: 14px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      /* Button and Links */
+      .button-group {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .button-group a {
+        background-color: #6a9fb5;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 10px rgba(106, 159, 181, 0.2);
+      }
+
+      .button-group a:hover {
+        background-color: #518499;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(106, 159, 181, 0.4);
+      }
+
+      /* Footer (College Name) */
+      .college-name {
+        font-size: 28px;
+        font-weight: bold;
+        color: #6a9fb5;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (min-width: 768px) {
+        body {
+          padding: 40px;
+        }
+
+        .container {
+          max-width: 600px;
+        }
+
+        .college-name {
+          font-size: 32px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 700px;
+        }
+
+        .college-name {
+          font-size: 36px;
+        }
+      }
+
+      /* Custom Scrollbar Styles for Body */
+      body::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      body::-webkit-scrollbar-track {
+        background: #e4e9ef;
+        border-radius: 10px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: #6a9fb5;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      body::-webkit-scrollbar-thumb:hover {
+        background-color: #518499;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header (Logo at the top) -->
+    <div class="logo-container">
+      <img src="GMIU.png" alt="College Logo" />
+    </div>
+
+    <!-- Main Content (Centered Form) -->
+    <div class="container">
+      <label for="subjectName">Subject Name:</label>
+      <input type="text" id="subjectName" value="Web Design" readonly />
+
+      <label for="subjectCode">Subject Code:</label>
+      <input type="text" id="subjectCode" value="BETCE13304" readonly />
+
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" value=" NARIGARA  SACHIN MOHANBHAI" readonly />
+
+      <label for="enNo">Enrollment Number:</label>
+      <input type="text" id="enNo" value="20230905090041" readonly />
+
+      <div class="button-group">
+        <a href="">ALA-1</a>
+        <a href="">ALA-2</a>
+        <a href="">ALA-3</a>
+      </div>
+    </div>
+
+    <!-- Footer (College Name at the bottom) -->
+    <div class="college-name">Gyanmanjari Innovative University</div>
+  </body>
+</html>
